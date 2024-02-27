@@ -1,6 +1,6 @@
 import java.util.*;
 
-class tm
+class sm
 {
     public static void main(String args[])
     {
@@ -48,6 +48,16 @@ class tm
             }
 
         }
+        System.out.println("The elements of the transpose matrix") ;
+        for(i=0;i<row;i++)
+        {
+            for(j=0;j<col;j++)
+            {
+                System.out.print(transpose[i][j]+"\t");
+            }
+            System.out.println("");
+        }
+
 
         if(row==col)
         {
@@ -82,4 +92,23 @@ class tm
     }
 }
 
-                   output
+                                        output
+
+
+Enter the number of rows:
+2
+Enter the number of columns:
+2
+Enter the elements of the matrix
+1
+2
+2
+1
+The elements of the matrix
+1	2	
+2	1	
+The elements of the transpose matrix
+1	2	
+2	1	
+
+The matrix is symmetric

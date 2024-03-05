@@ -1,0 +1,28 @@
+import java.util.Arrays;
+class Sort
+{
+    public static void main(String args[])
+    {
+        String names[]={"virat","jadeja","messi","anderson","zaka"};
+                int len=names.length;
+            for(int i=0;i<len-1;i++)
+            {
+                for(int j=i+1;j<len;j++)
+                {
+                    if(names[i].compareTo(names[j])>0)
+                    {
+                        String temp=names[i];
+                        names[i]=names[j];
+                        names[j]=temp;
+                    }
+                }
+            }
+            System.out.println(Arrays.toString(names));
+    }
+}                                                                             
+                                                                            output
+
+C:\Users\mlm\.jdks\openjdk-21.0.2\bin\java.exe "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.3\lib\idea_rt.jar=65265:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.3.3\bin" -Dfile.encoding=UTF-8 -Dsun.stdout.encoding=UTF-8 -Dsun.stderr.encoding=UTF-8 -classpath C:\Users\mlm\IdeaProjects\athulya\out\production\athulya Sort
+[anderson, jadeja, messi, virat, zaka]
+
+Process finished with exit code 0
